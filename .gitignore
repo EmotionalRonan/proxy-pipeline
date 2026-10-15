@@ -1,0 +1,10 @@
+# 中间产物（每次 CI 运行都会重新生成，无需入库）
+yaml_data/
+screening_results/
+mihomo_results_v2/mihomo_runtime/
+geo_cache.json
+__pycache__/
+*.pyc
+.DS_Store
+
+# 注意：dist/ 故意不忽略 —— 作为订阅源，由工作流每次提交最新节点
