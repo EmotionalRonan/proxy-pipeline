@@ -243,7 +243,8 @@ def discover_yaml_links():
 
 # ── Proxy processing ────────────────────────────────────────────────
 
-OUTPUT_DIR = "/Users/ronan/WorkBuddy/Claw/outputs/yaml_data"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "yaml_data")
 DOWNLOAD_DIR = os.path.join(OUTPUT_DIR, "raw")
 
 log_lines = []
